@@ -27,6 +27,15 @@ const UglifyJsPluginConfig = new UglifyJSPlugin({
     sourceMap: true
 });
 
+/* Configure OptimizeCssAssets */
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const OptimizeCssAssetsPluginConfig = new OptimizeCssAssetsPlugin({
+    assetNameRegExp: /\.css$/g,
+    cssProcessor: require('cssnano'),
+    cssProcessorOptions: { discardComments: {removeAll: true } },
+    canPrint: true
+});
+
 /* Export configuration */
 module.exports = {
     devtool: 'source-map',
@@ -59,5 +68,6 @@ module.exports = {
         BrowserSyncPluginConfig,
         ProgressBarPluginConfig,
         UglifyJsPluginConfig,
+        OptimizeCssAssetsPluginConfig
     ]
 };
