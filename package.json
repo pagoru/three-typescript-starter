@@ -19,6 +19,7 @@
     "progress-bar-webpack-plugin": "latest",
     "style-loader": "latest",
     "typescript": "latest",
+    "uglifyjs-webpack-plugin": "latest",
     "webpack": "latest",
     "webpack-dev-server": "latest"
   },
