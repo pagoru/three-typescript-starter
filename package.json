@@ -16,6 +16,8 @@
     "extract-text-webpack-plugin": "latest",
     "html-webpack-plugin": "latest",
     "json-loader": "latest",
+    "less": "^2.7.3",
+    "less-loader": "latest",
     "progress-bar-webpack-plugin": "latest",
     "style-loader": "latest",
     "typescript": "latest",
